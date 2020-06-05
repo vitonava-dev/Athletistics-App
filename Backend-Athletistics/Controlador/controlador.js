@@ -7,14 +7,14 @@ const Administrador= require('../Modelo/Administrador')
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'navabi05',
+    password: '',
     database: 'athletistics_db'
     
 });
 
 connection.connect(err =>  {
     if(err){
-        console.log("Not Connected!");
+        console.log("Not Connected");
         return err;
     }
     console.log("Connected!");
